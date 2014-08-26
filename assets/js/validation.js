@@ -1,3 +1,7 @@
+jQuery.validator.addMethod('answercheck', function (value, element) {
+        return this.optional(element) || /^\byes\b$/.test(value);
+    }, "type 'yes' -_-");
+
 // validate contact form
 $(function() {
     $('#contact').validate({
@@ -12,6 +16,10 @@ $(function() {
             },
             message: {
                 required: true
+            },
+            answer: {
+                required: true,
+                answercheck: true
             }
         },
         messages: {
@@ -25,6 +33,9 @@ $(function() {
             message: {
                 required: ":) you have to write something to send this form.",
                 minlength: "thats all?"
+            },
+            answer: {
+                required: "please type in 'yes' to confirm that you are human"
             }
         },
         submitHandler: function(form) {

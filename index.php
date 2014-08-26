@@ -18,7 +18,6 @@
     <link href="assets/css/cover.css" rel="stylesheet">
     <link href="assets/css/bg.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -36,16 +35,17 @@
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Sue Ann Ioanis</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="contact.php">Contact</a></li>
-              </ul>
-            </div>
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">Sue Ann Ioanis</h3>
+            <ul class="nav masthead-nav">
+              <li class="active"><a href="index.php">Home</a></li>
+              <li><a href="about.php">About</a></li>
+              <li><a href="contact.php">Contact</a></li>
+            </ul>
           </div>
+        </div>
+
 
           <div class="inner cover">
             <h1 class="cover-heading">Welcome to my online portfolio.</h1>
@@ -55,11 +55,7 @@
             </p>
           </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>© for <a href="http://sioanis.com">sioanis.com</a>, by <a href="https://twitter.com/sueannioanis">@sueannioanis</a>.</p>
-            </div>
-          </div>
+        <?php include("assets/footer.php"); ?>
 
         </div>
 
@@ -68,6 +64,7 @@
     </div>
 
     <!-- JS -->
+    <script src="assets/js/navigation.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="assets/js/docs.min.js"></script>

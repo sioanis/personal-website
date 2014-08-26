@@ -34,16 +34,17 @@
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Sue Ann Ioanis</h3>
-              <ul class="nav masthead-nav">
-                <li><a href="index.php">Home</a></li>
-                <li class="active"><a href="about.php">About</a></li>
-                <li><a href="contact.php">Contact</a></li>
-              </ul>
-            </div>
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">Sue Ann Ioanis</h3>
+            <ul class="nav masthead-nav">
+              <li><a href="index.php">Home</a></li>
+              <li class="active"><a href="about.php">About</a></li>
+              <li><a href="contact.php">Contact</a></li>
+            </ul>
           </div>
+        </div>
+
 
           <div class="inner cover">
             <p>
@@ -79,17 +80,11 @@
             <h3>Hobbies <span class="badge">5+</span></h3>
 
 
-
-
-
             </p>
           </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>© for <a href="http://sioanis.com">sioanis.com</a>, by <a href="https://twitter.com/sueannioanis">@sueannioanis</a>.</p>
-            </div>
-          </div>
+
+        <?php include("assets/footer.php"); ?>
 
         </div>
 
@@ -98,6 +93,7 @@
     </div>
 
     <!-- JS -->
+    <script src="assets/js/navigation.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="assets/js/docs.min.js"></script>

@@ -18,7 +18,7 @@
     <link href="assets/css/contact.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -35,16 +35,17 @@
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Sue Ann Ioanis</h3>
-              <ul class="nav masthead-nav">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li class="active"><a href="contact.php">Contact</a></li>
-              </ul>
-            </div>
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">Sue Ann Ioanis</h3>
+            <ul class="nav masthead-nav">
+              <li><a href="index.php">Home</a></li>
+              <li><a href="about.php">About</a></li>
+              <li class="active"><a href="contact.php">Contact</a></li>
+            </ul>
           </div>
+        </div>
+
 
           <div class="inner cover">
 
@@ -62,6 +63,20 @@
     
 
   <div class="col-sm-4 contact-form">
+
+  <div id="success">
+    <span class="green textcenter">
+        <p>Your msg was sent! I'll try to reply asap. :)</p>
+    </span>
+  </div>
+
+  <div id="error">
+    <span>
+        <p>Something went wrong, try refreshing and submitting the form again.</p>
+    </span>
+  </div>
+
+
     <form id="contact" name="contact" action="mail.php"  method="post" class="form" role="form">
       <div class="row">
         <div class="col-xs-6 col-md-6 form-group">
@@ -73,8 +88,11 @@
       </div>
         <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
         <br />
+        <input class="form-control" id="answer" name="answer" placeholder="Type 'yes' to confirm that you are human." type="text" required />
+        <br />
+
       <div class="row">
-        <div class="col-xs-6 col-md-6 form-group">
+        <div class="col-xs-8 col-md-8 form-group">
         <button class="btn btn-primary pull-right" type="submit">Submit</button>
         </div>
       </div>
@@ -85,26 +103,9 @@
 </div>
 
 
-
-<div id="success">
-    <span class="green textcenter">
-        <p>Your message was sent successfully! I will be in touch as soon as I can.</p>
-    </span>
-</div>
-
-<div id="error">
-    <span>
-        <p>Something went wrong, try refreshing and submitting the form again.</p>
-    </span>
-</div>
-
           </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>© for <a href="http://sioanis.com">sioanis.com</a>, by <a href="https://twitter.com/sueannioanis">@sueannioanis</a>.</p>
-            </div>
-          </div>
+        <?php include("assets/footer.php"); ?>
 
         </div>
 
@@ -113,6 +114,7 @@
     </div>
 
     <!-- JS -->
+    <script src="assets/js/navigation.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="assets/js/docs.min.js"></script>
