@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+@-webkit-keyframes changingBg {
+  20% {
+    background: skyblue;
+  }
+  40% {
+    background: mediumpurple;
+  }
+  60% {
+    background: mediumaquamarine;
+  }
+  80% {
+    background: salmon;
+  }
+}
+@-moz-keyframes changingBg {
+  20% {
+    background: skyblue;
+  }
+  40% {
+    background: mediumpurple;
+  }
+  60% {
+    background: mediumaquamarine;
+  }
+  80% {
+    background: salmon;
+  }
+}
+@keyframes changingBg {
+  20% {
+    background: skyblue;
+  }
+  40% {
+    background: mediumpurple;
+  }
+  60% {
+    background: mediumaquamarine;
+  }
+  80% {
+    background: salmon;
+  }
+}
+body {
+  background: salmon;
+  -webkit-animation: changingBg 10s ease-in-out infinite;
+  -moz-animation: changingBg 10s ease-in-out infinite;
+  animation: changingBg 10s ease-in-out infinite;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.hi {
+  color: #fff;
+  text-align: center;
+  font-family: "Syncopate", sans-serif;
+  font-weight: bold;
+  font-size: 90px;
+  position: relative;
+  top: 35%;
+  vertical-align: center;
+  -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+  -moz-transform: matrix(1, -0.3, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+  -o-transform: matrix(1, -0.3, 0, 1, 0, 0);
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+  -webkit-animation: bent-in 5s ease-in-out 1 forwards;
+  -moz-animation: bent-in 5s ease-in-out 1 forwards;
+  animation: bent-in 5s ease-in-out 1 forwards;
+}
+
+@-webkit-keyframes bent-in {
+  0% {
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+  }
+  100% {
+    -webkit-transform: rotate(370deg);
+  }
+}
+@-moz-keyframes bent-in {
+  0% {
+    -moz-transform: matrix(1, -0.3, 0, 1, 0, 0);
+  }
+  100% {
+    -moz-transform: rotate(370deg);
+  }
+}
+@keyframes bent-in {
+  0% {
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -moz-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -o-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+  }
+  100% {
+    -webkit-transform: rotate(370deg);
+    -moz-transform: rotate(370deg);
+    -ms-transform: rotate(370deg);
+    -o-transform: rotate(370deg);
+    transform: rotate(370deg);
+  }
+}
+
